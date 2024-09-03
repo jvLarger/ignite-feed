@@ -1,19 +1,30 @@
+import { Avatar } from './Avatar';
 import { Comment } from './Comment';
 import styles from './Post.module.css'
 
 export function Post() {
     return (
         <article className={styles.post}>
+
             <header>
+
                 <div className={styles.author}>
-                    <img className={styles.avatar} src='https://github.com/jvLarger.png' />
+
+                    <Avatar
+                        src='https://github.com/jvLarger.png'
+                    />
+
                     <div className={styles.authorInfo}>
                         <strong>João Victor Larger</strong>
                         <span>Software Developer</span>
                     </div>
+
                 </div>
+
                 <time title='1 de setembro às 17:39h' dateTime="2024-09-01 17:39:00">Publicado há 1h</time>
+
             </header>
+
             <div className={styles.content}>
                 <p>Fala galeraa 👋</p>
                 <p>Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀</p>
