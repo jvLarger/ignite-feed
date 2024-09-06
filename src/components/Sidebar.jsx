@@ -5,7 +5,7 @@ import { Avatar } from './Avatar';
 
 export function Sidebar() {
     return (
-        <asside className={styles.sidebar}>
+        <aside className={styles.sidebar}>
 
             <img
                 className={styles.cover}
@@ -25,6 +25,6 @@ export function Sidebar() {
                     Editar seu Perfil
                 </a>
             </footer>
-        </asside>
+        </aside>
     );
 }
